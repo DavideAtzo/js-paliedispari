@@ -14,7 +14,7 @@ console.log(risposta);
 let numGiocatore = '';
 // chiedi con prompt un numero da 1 a 5
 do {
-    numGiocatore = prompt('Scegli un numero da 1 a 5 ');
+    numGiocatore = Number(prompt('Scegli un numero da 1 a 5 '));
 }
 // WHILE se il numero scelto non è compreso tra quelli sotto citati, continua  a chiedere
 while (numGiocatore <= 1 || numGiocatore > 5);
@@ -28,5 +28,7 @@ function pcNumero(min, max) {
   console.log(numeroComputer);
   pcNumero();
 
+//   somma dei numeri giocatore e computer 
+  const risultato = numGiocatore + numeroComputer;
+  console.log(risultato);
 
-  
