@@ -32,3 +32,17 @@ function pcNumero(min, max) {
   const risultato = numGiocatore + numeroComputer;
   console.log(risultato);
 
+// funzione che controllerà se la somma (risulato) è pari o dispari 
+function controllo(risultato){
+    if(risultato % 2 === 0){
+        return 'vero';
+    }
+    return 'falso';
+}
+const verdetto =  controllo(risultato);
+// condizione che va a richiamare la funzione del verdetto 
+if(risposta === verdetto){
+    console.log('hai vinto');
+} else{
+    console.log('ahahah hai perso');
+}
