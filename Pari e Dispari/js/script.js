@@ -24,6 +24,9 @@ console.log(numGiocatore);
 function pcNumero(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
   }
-  const numeroComputer =  pcNumero(1, 5);
+  let numeroComputer =  pcNumero(1, 5);
   console.log(numeroComputer);
   pcNumero();
+
+
+  
